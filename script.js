@@ -59,3 +59,14 @@ document.write("the sum of " + a + " , " + b + " and " + c + "is: " + result);
 document.write(linebreak);
 
 
+//promise represenrs the  result of an asyncronous operation
+
+var promise = new promise((resolve,reject) => {
+    let success = true
+    if(success)
+    resolve("data loaded");
+else
+    reject("error occured");
+});
+promise.then(result => console.log(result))
+  .catch(error => console.log(error));
